@@ -1,0 +1,195 @@
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root {
+    /*---------------Theme Colors--------------*/
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /*gradient color*/
+    --sky: linear-gradient(120deg,#a1c4fd 0%, #c2e9fb 100%);
+
+}
+/*------------------------------Global Classes--------------------------*/
+
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: 'Lexend Deca', cursive;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Lexend Deca', cursive;
+}
+
+h3 {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: 'Livvic', sans-serif;
+    cursor: pointer;
+}
+
+
+/*------------------X------------Global Classes--------------X------------*/
+
+/*---------------Navbar-------------------------*/
+
+.nav {
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 87%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0.3rem;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 40rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family:  'Abel', cursive;
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: var(--midnight);
+    color:var(--white);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color:var(--white);
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: 'Lexend Deca', cursive;
+    font-size: 1.6rem;
+
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+
+}
+.nav .social i{
+    padding: 0 0.2rem;
+}
+
+.nav .social i:hover {
+    color: #a1c4cf;
+}
+/*--------X-------Navbar-------------X------------*/
+
+
+/*--------------Banner Area---------------*/
+ .banner-area {
+    background: url(../1.jpg);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+}
+
+ main .banner-area .site-title{
+    padding: 15rem 5rem;
+    color:var(--midnight);
+    text-align: center;
+}
+
+main .site-title h1, h3 {
+    margin: 1rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--midnight);
+    color: var(--midnight);
+}
+
+/*--------X------Banner Area---------X------*/
+
+
+
+
+
+
+
+
+
+/*                Viewport less than or equal to 750px                  */
+
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu, .nav-items {
+        flex-direction: column;
+    }
+   
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+
+
+/*        X        Viewport less than or equal to 750px           X        */
+
